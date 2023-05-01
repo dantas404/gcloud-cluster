@@ -26,7 +26,7 @@ provider "google" {
 }
 
 resource "google_container_cluster" "example_cluster" {
-  name               = "example-cluster"
+  name               = var.cluster_name
   initial_node_count = 3
   node_config {
     machine_type = "n1-standard-1"
