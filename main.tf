@@ -25,7 +25,7 @@ provider "google" {
   zone        = var.zone
 }
 
-resource "google_container_cluster" var.resource_name {
+resource "google_container_cluster" "httpd_cluster" {
   name               = var.cluster_name
   initial_node_count = 3
   node_config {
