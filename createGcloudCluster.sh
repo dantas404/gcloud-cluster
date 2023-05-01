@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Be sure the JSON key is in the same directory as this script"
+echo "Be sure the JSON key is in the same directory as this script and the service account has the permissions needed"
 
 gcloud auth login
 
