@@ -4,8 +4,8 @@ echo "Be sure the JSON key is in the same directory as this script and the servi
 gcloud auth login
 
 read -p "Enter the project ID: " project_id
-read -p "Enter the region, leave blank for us-central1: " region
-read -p "Enter the zone, leave blank for us-central1-c: " zone
+read -p "Enter the region: " region
+read -p "Enter the zone: " zone
 read -p "Enter the cluster name: " cluster_name
 
 export TF_VAR_project_id=$project_id

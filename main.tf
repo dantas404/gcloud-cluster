@@ -5,12 +5,12 @@ variable "project_id" {
 
 variable "region" {
   type    = string
-  default = "us-central1"
+  default = ""
 }
 
 variable "zone" {
   type    = string
-  default = "us-central1-c"
+  default = ""
 }
 
 variable "cluster_name" {
