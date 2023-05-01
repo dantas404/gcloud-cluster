@@ -21,6 +21,8 @@ terraform plan
 
 terraform apply -var="project_id=${TF_VAR_project_id}" -var="region=${TF_VAR_region}" -var="zone=${TF_VAR_zone}" -var="cluster_name=${TF_VAR_cluster_name}" -var="resource_name=${TF_VAR_resource_name}" -auto-approve
 
+gcloud auth login
+
 gcloud container clusters get-credentials $cluster_name --zone $zone --project $project_id
 
 kubectl apply -f deployment.yaml
