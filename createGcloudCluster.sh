@@ -7,7 +7,6 @@ read -p "Enter the project ID: " project_id
 read -p "Enter the region: " region
 read -p "Enter the zone: " zone
 read -p "Enter the cluster name: " cluster_name
-read -p "Name the resource: " resource_name
 
 export TF_VAR_project_id=$project_id
 export TF_VAR_region=$region
