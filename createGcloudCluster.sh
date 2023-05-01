@@ -18,3 +18,10 @@ terraform plan
 
 terraform apply -var="project_id=${TF_VAR_project_id}" -var="region=${TF_VAR_region}" -var="zone=${TF_VAR_zone}" -var="cluster_name=${TF_VAR_cluster_name}" -auto-approve
 
+gcloud container clusters get-credentials $cluster_name --zone $zone --project $project_id
+
+kubectl apply -f deployment.yaml
+
+kubectl apply -f service.yaml
+
+kubectl get svc

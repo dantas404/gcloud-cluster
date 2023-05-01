@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache-site
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apache-site
+  template:
+    metadata:
+      labels:
+        app: apache-site
+    spec:
+      containers:
+        - name: apache-site
+          image: dantas404/apache-site:latest
+          ports:
+            - containerPort: 80
