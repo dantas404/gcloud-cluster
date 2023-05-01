@@ -20,6 +20,7 @@ terraform plan
 terraform apply -var="project_id=${TF_VAR_project_id}" -var="region=${TF_VAR_region}" -var="zone=${TF_VAR_zone}" -var="cluster_name=${TF_VAR_cluster_name}" -auto-approve
 
 echo "Cluster Up and Running!"
+echo "run gcloud container clusters get-credentials [CLUSTER NAME] --zone [ZONE] --project [PROJECT ID]"
 echo "run kubectl apply -f deployment.yaml to deploy the app"
 echo "run kubectl apply -f service.yaml to deploy the service"
 echo "run kubectl get service to get the external IP address"
