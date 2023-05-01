@@ -25,7 +25,7 @@ provider "google" {
   zone        = var.zone
 }
 
-resource "google_container_cluster" "example_cluster" {
+resource "google_container_cluster" "var.resource_name" {
   name               = var.cluster_name
   initial_node_count = 3
   node_config {
