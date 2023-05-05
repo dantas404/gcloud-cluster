@@ -30,7 +30,7 @@ resource "google_container_cluster" "httpd_cluster" {
   initial_node_count = 3
   node_config {
     machine_type = "n1-standard-1"
-    disk_size_gb = 100
+    disk_size_gb = 10
     oauth_scopes = [
       "https://www.googleapis.com/auth/compute",
       "https://www.googleapis.com/auth/devstorage.read_only",
